@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+           function  armstrong(num){
+            var num=153; 
+            var rem;
+            var sum=0;
+            var temp=num;
+            var arm=num;
+            var count=0;
+            while(num>0){
+             rem= num%10;
+             count++;
+             num=parseInt(num/10);
+            }
+            while(temp>0){
+                rem=temp%10;
+                sum=sum+(rem**count);
+                temp=parseInt(temp/10);
+
+            }
+            if(arm===sum){
+                return("its a armstrong number")
+            }
+            else{
+                return("not a armstrong number")
+            } 
+
+           } 
+            var x=armstrong(153)
+            console.log(x)
+        </script>
+    </body>    
+</html>

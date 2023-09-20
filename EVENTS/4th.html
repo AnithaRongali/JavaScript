@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>4Q</title>
+        <style>
+           div{
+                 border: 1px solid black;
+                 height: 100px;
+                 width: 100px;
+                 margin: 20px;
+                 padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1" onclick=" abc(event)"></div>
+        <script>
+       var ar=["red","blue","pink","green","black"]
+       var x=document.getElementById("d1")
+       var index=0;
+       x.style.backgroundColor=ar[index]
+        function abc(event){
+          if(index<ar.length){
+            index++
+            x.style.backgroundColor=ar[index]
+          }
+          else{
+            index =0;
+            x.style.backgroundColor=ar[index]
+          }
+          
+        }
+        </script>
+    </body>
+</html>

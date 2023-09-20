@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function palindrome(a){
+               var num=3553;
+               var sum=0;
+               var temp=num;
+               var rem;
+               while(num>0){
+                 rem=num%10;
+                 sum=sum*10+rem
+                 num=parseInt(num/10)
+               }
+               if(temp===sum){
+                console.log("it is a palindrome")
+               }
+               else{
+                console.log(" not a palindrome")
+               }
+            }
+            var x=palindrome(3553);
+            
+        </script>
+    </body>
+</html>

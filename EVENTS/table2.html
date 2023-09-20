@@ -1,0 +1,67 @@
+<html>
+    <head></head>
+    <body>
+    <input type="text" placeholder="Fristname" id="d1"><br>
+    <input type="text" placeholder="lastname" id="d2"><br>
+    <input type="text" placeholder="age" id="d3"><br>
+    <button onclick="abc()"  id="button">submit</button>
+    <br>
+    <table  border="1px solid">
+        <thead>
+            <th>Fristname</th>
+            <th> Lastname</th>
+            <th> Age</th>
+            <th> Action</th>
+        </thead>
+        <tbody id="d4">
+            
+        </tbody>
+    </table>
+        <script>
+               var br=[]
+                function abc(){
+                var people={
+                  firstname:"",
+                  lastname:"",
+                  age:"",
+                  action:"",
+                  
+                }
+                people.firstname=document.getElementById("d1").value
+                people.lastname=document.getElementById("d2").value
+                people.age=document.getElementById("d3").value
+                
+                br.push(people)
+                gentable();
+            }
+            function gentable(){
+              document.getElementById("d4").innerHTML=""
+             br.foreach(function(a){
+                var ntr=document.createElement("tr")
+                var ntd=document.createElement("td1")
+                ntd1.innerHTML=a.firstname
+                ntr.appendChild(ntd1)
+
+               var ntd2=document.createElement("td2")
+                ntd2.innerHTML=a.lastname
+                ntr.appendChild(ntd2)
+
+                var ntd3=document.createElement("td3")
+                ntd3.innerHTML=a.age
+                ntr.appendChild(ntd3)
+
+                var ntd4=document.createElement("td4")
+                var nbt=document.createElement("nbt")
+                nbt.innerHTML=delete
+                ntd4.appendChild(nbt)
+                ntr.appendChild(ntd4)
+                document.getElementById("d4").appendChild(ntr)
+
+                nbt.onclick=function(){
+                    br.splice(b,1);
+                    gentable();
+                }
+
+             })
+                
+            }

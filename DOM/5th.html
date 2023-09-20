@@ -1,0 +1,153 @@
+<html>
+    <head>
+      <style>
+          #img{
+            margin-right: 6px;
+            margin-bottom: 6px;
+          }
+      </style> 
+    </head>
+    <body>
+         <h3> <center> DOM-ASSIGNMENT</center></h3>
+         <hr>
+         <div id="d3"></div>
+         <ul id="d4"></ul>
+         <ul id="d5"></ul>
+         <table border="2">
+          <thead>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th> age</th>
+            <th> gender</th>
+            <th> Salary</th>
+            <th> City</th>
+          </thead>
+          <tbody id="d6">
+          </tbody>
+         </table>
+    </body>
+    <script>
+        var x=document.createElement("h1")
+        x.innerHTML="Hello DOM World"
+        document.body.appendChild(x)
+        document.getElementById("d3").appendChild(x)
+
+        var y=document.createElement("h1")
+        y.innerHTML="Hello DOM World"
+        document.body.appendChild(y)
+        y.style.color="red"
+        document.getElementById("d3").appendChild(y)
+
+       var b= document.getElementById('d4')
+       var students=['ramesh','suresh','praveen','gopi','sunil',]
+       students.forEach(function(a){
+         var nli = document.createElement("li")
+         nli.innerHTML=a
+         b.appendChild(nli)
+       })
+
+       var c=document.getElementById("d5")
+       var ar=["11","12","13","14","15","16","17"]
+       ar.forEach(function(a){
+        var nli=document.createElement("li")
+        nli.innerHTML=a
+        c.appendChild(nli)
+       })
+       var people = [
+                            {
+                            "firstname": "praveen",
+                            "lastname": "gubbala",
+                            "age": 36,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 10000
+                            },
+                            {
+                            "firstname": "srikanth",
+                            "lastname": "gubbala",
+                            "age": 32,
+                            "gender": "male",
+                            "city": "bengaluru",
+                            "salary": 20000
+                            },
+                            {
+                            "firstname": "pradeep",
+                            "lastname": "reddy",
+                            "age": 21,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 25000
+                            },
+                            {
+                            "firstname": "mounika",
+                            "lastname": "mudiraj",
+                            "age": 20,
+                            "gender": "female",
+                            "city": "nalgonda",
+                            "salary": 30000
+                            },
+                            {
+                            "firstname": "nikhil",
+                            "lastname": "m",
+                            "age": 22,
+                            "gender": "male",
+                            "city": "guntur",
+                            "salary": 2000
+                            },
+                            {
+                            "firstname": "riya",
+                            "lastname": "bhadouria",
+                            "age": 14,
+                            "gender": "female",
+                            "city": "indore",
+                            "salary": 40000
+                            }
+                            ];
+                for(i=0;i<=people.length-1;i++){
+
+                  var ntr=document.createElement("tr")
+
+                  var firstnametd=document.createElement("td")
+                  firstnametd.innerHTML=people[i].firstname
+                  ntr.appendChild(firstnametd)
+
+                  var lastnametd=document.createElement("td")
+                   lastnametd.innerHTML=people[i].lastname
+                  ntr.appendChild(lastnametd)
+
+                  var agetd=document.createElement("td")
+                   agetd.innerHTML=people[i].age
+                  ntr.appendChild(agetd)
+
+                  var gendertd=document.createElement("td")
+                  gendertd.innerHTML=people[i].gender
+                  ntr.appendChild(gendertd)
+
+                  var salarytd=document.createElement("td")
+                   salarytd.innerHTML=people[i].salary
+                  ntr.appendChild(salarytd)
+
+                  var citytd=document.createElement("td")
+                   citytd.innerHTML=people[i].city
+                  ntr.appendChild(citytd)
+                  document.getElementById("d6").appendChild(ntr)
+                   console.log(ntr)
+                }
+                
+
+                var urls=[
+                          " https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?cs=srgb&dl=pexels-roberto-nickson-2486168.jpg&fm=jpg",
+                           " https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=2000",
+                          " https://img.freepik.com/premium-photo/abstract-art-flower-pattern-illustration-beauty-artistic-background-design_784625-3009.jpg"]
+                urls.forEach(function(a){
+                var b=  document.createElement("img")
+                b.src=a
+                b.width=200
+                b.height=200;
+                b.setAttribute("id","img")
+                document.body.appendChild(b)
+                })
+              
+    
+    </script>
+</html>

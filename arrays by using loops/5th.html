@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //print the number of digit given number
+            var ar = [145,789,4567]
+            for(var i=0;i<=ar.length-1;i++){
+            var digit;
+            var count=0;
+            for(var j=ar[i];j>0;j=parseInt(j/10)){
+                digit = j%10;
+                count++;
+            }
+            console.log(count)
+        }
+        </script>
+    </body>
+</html>
+<!-- var digit;
+var count=0;
+for(var num=15675879;num>0;num){
+  digit  =  num%10;
+  count++;
+ num=parseInt(num/10)
+}
+console.log(count) -->

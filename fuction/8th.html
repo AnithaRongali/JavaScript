@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function digit(num){
+               var num =45689;
+               var rem;
+               count=0;
+               while(num>0){
+                rem=num%10
+                count++
+                num=parseInt(num/10)
+               }
+               return count
+            }
+            var digit=digit(45689);
+            console.log(digit)
+        </script>
+    </body>
+</html>

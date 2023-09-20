@@ -1,0 +1,39 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //print all thr palindrome numbers numbers in given arrray
+            
+            var ar=[2442,6678,3663];
+          for( var i=0;i<=ar.length-1;i++){
+                var temp = ar[i];
+                var rem;
+                var sum=0;
+                for(var j=ar[i];j>0;j=parseInt(j/10)){
+                rem = j%10;
+                sum = sum*10+rem;
+            
+               }  
+          
+            if(temp===sum){
+                console.log(sum)
+            }
+        }
+        </script>
+    </body>
+</html>
+<!-- var num=3443;
+var temp=num;
+var rem;
+sum=0;
+for(num=3443;num>0;num){
+  rem=num%10 ;
+   sum=sum*10+rem;
+   num=parseInt(num/10)
+}
+if(temp===sum){
+    console.log("its a palindrome number")
+}
+else{
+    console.log("its a not palindrome number")
+} -->

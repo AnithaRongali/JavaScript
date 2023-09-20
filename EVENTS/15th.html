@@ -1,0 +1,40 @@
+<html>
+    <head>
+       <style>
+         button{
+            height: 30px;
+            background-color: antiquewhite;
+           
+         }
+       </style>
+    </head>
+    <body>
+        <div style="text-align: center;">
+          <h1 style="color: red;">Add Students</h1>
+          <input style="border-color: blueviolet;" type="text" placeholder="" id="input" >
+          <button onclick="abc(event)">Add Student</button>
+        </div>
+        <ul id="d1"></ul>
+        <script>
+            var x=document.getElementById("input")
+            var y=document.getElementById("d1")
+            var Students=[]
+            function abc(event){
+                var i=x.value
+                Students.push(i)
+                display();
+            }
+            function display(){
+                y.innerHTML='';
+                Students.forEach(function(Student){
+                var z=document.createElement("li")
+                z.innerHTML=Student
+                z.style.color="red"
+                y.appendChild(z)
+                })
+            }
+        </script>
+       
+
+    </body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

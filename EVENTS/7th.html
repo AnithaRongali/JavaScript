@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            div{
+                border: 1px solid black;
+                height: 200px;
+                width:300px;
+                font-size: 40px;
+                margin: 20px;
+
+            }
+            button{
+                margin-left: 20px;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>I Am Nothing</div>
+        
+
+       <button onclick="abc(event)">True/False</button>
+
+        <script>
+            var x=document.querySelector("div")
+            var ar =["True","False"]
+            index=0;
+            function abc(event){
+                x.innerHTML=ar[index];
+                index=(index+1)%ar.length
+            }
+        </script>
+    </body>
+</html>

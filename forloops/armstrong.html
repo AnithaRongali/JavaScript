@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            
+            var a=154;
+            var b;
+            var sum=0;
+            var temp=a;
+            var arm=a;
+            var count=0;
+            for(  i=154;i>0;i){
+             b= a%10;
+             count++;
+             i=parseInt(i/10);
+            }
+            var b;
+            for(temp=154;temp>0;temp){
+                b=temp%10;
+                sum=sum+(b**count);
+                temp=parseInt(temp/10);
+
+            }
+            if(arm=sum){
+                console.log("its a armstrong number")
+            }
+            else{
+                console.log("not a armstrong number")
+            }
+            
+        </script>
+    </body>
+</html>

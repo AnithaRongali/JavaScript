@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function prime(a){
+                var i=1
+                var a=7
+                var count=0
+                 while(i<=7){
+                    if(a%i===0){
+                        count++
+                    }
+                    i++;
+                 }
+              if(count===2) {
+                return("its a prime number")
+              }  
+              else{
+                return(" Not a prime number")
+              }
+            }
+            var prime = prime(7);
+            console.log(prime)
+        </script>
+    </body>
+</html>

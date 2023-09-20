@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //print greatest digit of each numberin an array
+            var ar = [143,457,897]
+            for(var i=0;i<=ar.length-1;i++){
+              var digit  ;
+              var greatest = 0;
+                digit = j%10;
+              for(var j=ar[i];j>0;j=parseInt(j/10)){
+                digit = j%10;
+                if(digit>greatest){
+                    greatest=digit
+     
+                }
+              }
+              console.log(greatest)
+            }
+        </script>
+    </body>
+</html>
+<!-- var num=498;
+var digit;
+var greatest=0
+for(num=498;num>0;num){
+digit=num%10;
+if(digit>greatest){
+    greatest=digit
+}
+num=parseInt(num/10)
+}
+console.log(greatest) -->

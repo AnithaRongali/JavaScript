@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>1Q</title>
+    <style> 
+      .box{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+
+    <button onclick="red(event)">Red</button>
+    <button onclick="green(event)">Green</button>
+    <button onclick="blue(event)">Blue</button>
+    <button onclick="restart(event)">Restart</button>
+    <script>
+      var x=document.querySelector(".box")
+
+       function red(event){
+          x.style.backgroundColor = "red"
+      }
+        function green(event){
+           x.style.backgroundColor = "green"
+      }
+        function blue(event){
+           x.style.backgroundColor = "blue"
+      }
+        function restart(event){
+           x.style.backgroundColor = "white"
+      }
+     </script>
+    </body>
+</html>

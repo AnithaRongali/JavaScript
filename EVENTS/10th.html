@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+         #d1 {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+          }  
+            
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: red;">Change background color using toggle button</h1>
+        <div id="d1"></div>
+        <br>
+        <div style="text-align: center;">
+        <button style="background-color:aqua;" onclick="abc()">Toggle</button>
+        </div>
+        <script> 
+        //    console.log(d1.style.backgroundColor)
+            function abc(){
+             if(d1.style.backgroundColor==="white"){
+                d1.style.backgroundColor="yellow"
+            }
+            else{
+                d1.style.backgroundColor="white"
+            }
+        }
+        </script>
+    </body>
+</html>

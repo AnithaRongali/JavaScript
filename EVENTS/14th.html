@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <body>
+        <div style="text-align: center;">
+        <h1 style="color: red;">Show images using URL</h1>
+        <label style="color: red;">Enter image URL</label>
+        <input  onclick="abc()" type="text" placeholder="Enter image url" id="input">
+        <br><br>
+        <button style="background-color: orange;">Add image</button>
+        </div>
+        <div id ="d1"></div>
+        <script>
+             var x=document.getElementById("input")
+             var y=document.getElementById("d1")
+             var images=[]
+             function abc(){
+                var i=x.value
+                images.push(i)
+                display();
+             }
+             function display(){
+                y.innerHTML=''
+                images.forEach(function(el){
+                 var z=document.createElement("img")
+                 z.src=el;
+                 y.appendChild(z);
+                 z.style.width="150px"
+                 z.style.height="150px"
+
+                })
+                    
+                }
+             
+
+        </script>
+    </body>
+</html>

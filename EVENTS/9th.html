@@ -1,0 +1,39 @@
+<html>
+    <head>
+       <style>
+          #d1{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+          }
+       </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: red;"> Change background Color of box using buttons</h1>
+        <div id="d1"></div>
+        <br>
+        <div style="text-align:center;">
+           <button  onclick="a()"  style="background-color: yellow;" id="d2">ON</button>
+            <button  onclick="b()" style="background-color: yellow;" id ="d3">OFF</button>
+        </div>
+        <script>
+            function a(){
+             var x=document.getElementById("d1") 
+             x.style.backgroundColor="yellow" 
+             var y=document.getElementById("d2")
+             y.style.backgroundColor="red"
+             var z=document.getElementById("d3")
+             z.style.backgroundColor="white"
+            }
+            function b(){
+                var a=document.getElementById("d1")
+                a.style.backgroundColor="white"
+                var b=document.getElementById("d3")
+                b.style.backgroundColor="red"
+              var c=document.getElementById("d2")
+                c.style.backgroundColor="white"
+            }
+        </script>
+    </body>
+</html>

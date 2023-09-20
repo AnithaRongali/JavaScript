@@ -1,0 +1,116 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var people = [
+                            {
+                            "firstname": "praveen",
+                            "lastname": "gubbala",
+                            "age": 36,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 10000
+                            },
+                            {
+                            "firstname": "srikanth",
+                            "lastname": "gubbala",
+                            "age": 32,
+                            "gender": "male",
+                            "city": "bengaluru",
+                            "salary": 20000
+                            },
+                            {
+                            "firstname": "pradeep",
+                            "lastname": "reddy",
+                            "age": 21,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 25000
+                            },
+                            {
+                            "firstname": "mounika",
+                            "lastname": "mudiraj",
+                            "age": 20,
+                            "gender": "female",
+                            "city": "nalgonda",
+                            "salary": 30000
+                            },
+                            {
+                            "firstname": "nikhil",
+                            "lastname": "m",
+                            "age": 22,
+                            "gender": "male",
+                            "city": "guntur",
+                            "salary": 2000
+                            },
+                            {
+                            "firstname": "riya",
+                            "lastname": "bhadouria",
+                            "age": 14,
+                            "gender": "female",
+                            "city": "indore",
+                            "salary": 40000
+                            }
+                            ];
+          //1. Print all the firstnames. 
+                 var i=  people.map(function(a){
+                        return (a["firstname"])
+                    })               
+                   console.log(i)
+           //2.  Print all the full names.
+           var i=  people.map(function(a){
+                        return (a["firstname"]+" "+a["lastname"])
+                    })               
+                   console.log(i)
+        //1.Print only those names whose age is more than 25.
+           var b=  people.filter(function(a){
+                return(a.age>25)
+           })
+          console.log(b)
+          //2.Print all female names.
+          var i=people.filter(function(a){
+             return(a.gender==="female")
+          })
+          console.log(i)
+          //3.Print only those names whose salary is more than 25000 and increase their salaries by 15%.
+            // var i=people.filter(function(a){
+              
+            // })
+            //4.Using prompt, print only those names whose city is "hyd".
+            
+                var i=people.filter(function(a){
+                    return(a.city==="hyd")
+                })
+                console.log(i)
+          //5.Print the total salary of all the people.
+             sum=0
+             var i=people.filter(function(a){
+                return(sum=sum+a.salary)
+             })
+             console.log(sum)
+        //6.Print all the firstnames whose salary is more than 25000.
+        var i=people.filter(function(a){
+                  return(a.salary>=25000)
+        })
+        console.log(i)
+        //7.Using prompt, print all names whose city is "hyd"
+            var i=people.filter(function(a){
+              return(a.city==="hyd")
+            })
+            console.log(i)
+        //8.Print all the male names whose age is greater than 25.
+             var i=people.filter(function(a){
+                   return(a.gender==="male"&&a.age>25)
+             })
+            console.log(i)
+      //9.Print all the cities in which the people live. There should not be any duplicate cities.
+        //   var br=[]
+        //   var i=people.filter(function(a){
+        //        if(!br.includes(a["city"])){
+        //            br.push(a["city"])
+        //        }
+        //   })
+        //   console.log(i)
+          </script>
+    </body>
+</html>

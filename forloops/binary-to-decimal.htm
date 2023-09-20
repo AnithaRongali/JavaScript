@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var num=111;
+            var  sum=0;
+            var i=0;
+            var rem;
+            for(num=111;num>0;num){
+            rem=num%10;
+            sum=sum+rem*(2**i);
+            num=parseInt(num/10)
+            i++;
+            }
+            console.log(sum)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            // print the reverse of all numbers present in an array
+            var ar=[121,895,845,689]
+            for(var i=0;i<=ar.length-1;i++){
+                var rem;
+                var sum=0
+                for(var j=ar[i];j>0;j= parseInt(j/10)){
+                  rem = j%10;
+                  sum = sum*10+rem;
+                  
+                }
+                console.log(sum)
+            }
+        </script>
+    </body>
+    
+</html>
+<!-- // var num=354;
+//             var rem;
+//             sum=0;
+//             for( num=354;num>0; num){
+//               rem=num%10 ;
+//                sum=sum*10+rem;
+//                num=parseInt(num/10)
+//             }
+//             console.log(sum) -->

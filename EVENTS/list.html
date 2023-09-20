@@ -1,0 +1,65 @@
+<html>
+
+<head></head>
+
+<body>
+    <input type="text" placeholder="fristname" id="d1">
+    <br>
+    <button id="d2" onclick="abc()"></button>
+    <button id="d4" onclick="abb()"></button>
+
+    <ul id="d3"></ul>
+
+    <script>
+        var cindex;
+        var b = document.getElementById("d1")
+        var x = document.getElementById("d2")
+        x.innerHTML = "Add button"
+        var d = document.getElementById("d4")
+        d.innerHTML = "update"
+        d.style.display = "none"
+
+        var br = [];
+        function abc() {
+            br.push(b.value)
+            display();
+
+        }
+        function display() {
+            var f = document.getElementById("d3")
+            f.innerHTML = ""
+            br.forEach(function (a, i) {
+                var nli = document.createElement("li")
+                nli.innerHTML = a;
+                var nbt = document.createElement("button")
+                var nbt1 = document.createElement("button")
+                nbt.innerHTML = "Delete"
+                nli.appendChild(nbt)
+                nbt1.innerHTML = "Edit"
+               nli.appendChild(nbt1)
+               f.appendChild(nli)
+
+                nbt.onclick = function () {
+                    br.splice(a, 1);
+                    display();
+                }
+                nbt1.onclick = function () {
+                    b.value = a
+                    x.style.display = "none"
+                    d.style.display = "block"
+                    cindex = i;
+                }
+            })
+        }
+        function abb() {
+            br[cindex] = b.value
+            display();
+            d.style.display = "none"
+            x.style.display = "block"
+            b.value = ""
+
+        }
+    </script>
+</body>
+
+</html>

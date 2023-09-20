@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+    <body>
+        <div id="mainContainer"></div>
+        <script>
+              var x=document.getElementById("mainContainer")
+              x.style.textAlign="center"
+             document.body.appendChild(mainContainer)
+
+              var y=document.createElement("h1")
+              y.innerHTML="Toggle button to show true/false"
+              y.style.color="red"
+              y.style.textAlign="center"
+              mainContainer.appendChild(y)
+         
+              var z=document.createElement("button")
+              z.innerHTML="Toggle"
+              z.style.backgroundColor="red"
+              mainContainer.appendChild(z)
+             
+              var isButtonClicked=false
+              var spanEl=document.createElement("span")
+              spanEl.innerHTML=isButtonClicked
+            
+            
+              Z.onclick=function(){
+                isButtonClicked=!isButtonClicked
+                spanEl.innerHTML=isButtonClicked
+                mainContainer.appendChild(spanEl)
+              }
+              mainContainer.appendChild(spanEl)
+              
+    
+        </script>
+    </body>
+</html>

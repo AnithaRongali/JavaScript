@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //print the sum of all digits of each number in an array
+            
+            var ar =[123,897,179,567]
+            for(var i=0;i<=ar.length-1;i++){
+            var sum =0;
+            var b;
+            for(var j=ar[i];j>0;j=parseInt(j/10)){
+                var b=j%10
+                sum = sum+b;
+            }
+            console.log(sum)
+        }
+        </script>
+    </body>
+</html>

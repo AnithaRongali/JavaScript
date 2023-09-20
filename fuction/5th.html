@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+        <script>
+           function rev(a){
+            var num = a
+             var sum=0;
+             var  rem;
+             while(num>0){
+                rem=num%10
+                sum=sum*10+rem
+                num=parseInt(num/10)
+             }
+             return sum;
+           }
+           var reverse = rev(4);
+           console.log(reverse)
+        </script>
+    
+</html>
