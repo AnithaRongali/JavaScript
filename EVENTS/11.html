@@ -1,32 +1,37 @@
- <html>
+<html>
     <head>
         <style>
-          #d1 {
-            
-             height: 100px;
-             width: 100px;
-             margin: 0 auto;
-           }
+            #d2{
+              width: 200px;
+              height: 150px;
+             margin : 0 auto;
+             
+            }        
         </style>
     </head>
     <body>
-        <h1 style="text-align: center; color: red;">Show bulb on/off image using toggle button </h1>
-           <center><img id="d1" src=""</center>
-           <br><br>
-           <center> <button style="background-color: aqua;"onclick="abc(event)" id="d2"></button></center>
-        </div>
-        
+        <center><h1 style="color: red;"> Show Bulb on/off image using toggle</h1></center>
+         <center><img  id="d2" src=" "alt=""></center> 
+        <br>
+        <center><button  id = "d3" onclick="bulb()" style="background-color: orange;"></button></center>
         <script>
-          function abc(){
-             if(button.innerHTML==="ON"){
-                 img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKRkb5dEMWGnALKJE35-wlARnj3P5QDp9Dm16yVc&s"
-                 button.innerHTML="OFF"
-                 }
-                 else{
-                   img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKRkb5dEMWGnALKJE35-wlARnj3P5QDp9Dm16yVc&s"
-                   button.innerHTML="ON"
-                    }
-                 }
+            var image = ["https://e7.pngegg.com/pngimages/517/423/png-clipart-yellow-led-bulb-illustration-incandescent-light-bulb-electric-light-lighting-electric-light-bulb-light-fixture-lights-thumbnail.png",
+                 "data:image/jpeg;base64,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"]
+
+          var g =  document.getElementById("d2");
+          g.src=image[0]   
+           var d =  document.getElementById("d3")
+           d.innerHTML="ON"  
+           function bulb(){
+            if(d.innerHTML==="ON"){
+                g.src=image[1]
+                d.innerHTML="OFF"
+            }
+            else{
+                g.src=image[0]
+                d.innerHTML="ON"
+            }
+           }
         </script>
     </body>
- </html>
+</html>
